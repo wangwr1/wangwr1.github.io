@@ -366,26 +366,6 @@ section > h2 {
   font-size: 14px;
 }
 
-.skills-list {
-  margin: 0;
-}
-
-.skills-list > div {
-  display: grid;
-  grid-template-columns: 140px minmax(0, 1fr);
-  gap: 20px;
-  padding: 10px 0;
-  border-bottom: 1px solid var(--line);
-}
-
-.skills-list dt {
-  font-weight: 700;
-}
-
-.skills-list dd {
-  margin: 0;
-}
-
 footer {
   padding-top: 22px;
   color: var(--muted);
@@ -499,10 +479,6 @@ footer {
     grid-row: 1;
   }
 
-  .skills-list > div {
-    grid-template-columns: 1fr;
-    gap: 2px;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -539,7 +515,6 @@ footer {
           <a href="#publications">Publications</a>
           <a href="#experience">Experience</a>
           <a href="#education">Education</a>
-          <a href="#skills">Skills</a>
         </nav>
 
         <div class="sidebar-bottom">
@@ -566,6 +541,8 @@ footer {
             <a href="http://www.yu-jingyi.com/" target="_blank" rel="noreferrer">Prof. Jingyi Yu</a>
             and
             <a href="https://www.xu-lan.com/" target="_blank" rel="noreferrer">Prof. Lan Xu</a>.
+            From July 2023 to April 2024, I was a visiting student advised by
+            <a href="https://datascience.hku.hk/people/shenghua-gao/" target="_blank" rel="noreferrer">Prof. Shenghua Gao</a>.
             Before that, I received my B.Eng. in Control Science and Engineering
             from Shandong University.
           </p>
@@ -627,7 +604,7 @@ footer {
             </div>
             <ul>
               <li>Developed identity-aware facial material enhancement for Hyper3D Rodin.</li>
-              <li>Developed and adapted automatic rigging algorithms for irregular production assets; the capability was integrated into Hyper3D and internal ByteDance workflows.</li>
+              <li>Developed ACT-based models and algorithms for automatic rigging and skinning of arbitrary-topology 3D assets, deployed in Hyper3D and ByteDance workflows.</li>
             </ul>
           </article>
         </section>
@@ -652,15 +629,6 @@ footer {
             </div>
             <time>Sep. 2020 - Jun. 2024</time>
           </article>
-        </section>
-
-        <section id="skills" aria-labelledby="skills-title">
-          <h2 id="skills-title">Skills</h2>
-          <dl class="skills-list">
-            <div><dt>Programming</dt><dd>Python, PyTorch, Blender</dd></div>
-            <div><dt>Methods</dt><dd>Transformer, diffusion models, multimodal learning, generative models</dd></div>
-            <div><dt>Research</dt><dd>3D content generation, character rigging and animation, image restoration and super-resolution</dd></div>
-          </dl>
         </section>
 
         <footer>
