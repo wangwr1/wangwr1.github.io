@@ -165,10 +165,32 @@ img {
 
 .sidebar-bottom {
   margin-top: auto;
-  padding-top: 40px;
+  padding-top: 24px;
   color: #90a0ab;
   font-size: 11px;
   line-height: 1.45;
+}
+
+.sidebar-qr {
+  display: block;
+  width: max-content;
+  padding: 6px;
+  background: #ffffff;
+  border-radius: 3px;
+}
+
+.sidebar-qr img {
+  width: 111px;
+  height: 111px;
+}
+
+.sidebar-bottom .sidebar-qr-label {
+  margin: 5px 0 11px;
+  color: var(--sidebar-muted);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
 }
 
 .sidebar-bottom p {
@@ -519,6 +541,10 @@ footer {
         </nav>
 
         <div class="sidebar-bottom">
+          <a class="sidebar-qr" href="https://wangwr1.github.io/" target="_blank" rel="noreferrer" aria-label="Open Weirui Wang's academic homepage">
+            <img src="data:image/png;base64,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" alt="QR code for Weirui Wang's academic homepage" width="444" height="444">
+          </a>
+          <p class="sidebar-qr-label">Scan to visit</p>
           <p>Shanghai, China</p>
           <p>wangwr2024@shanghaitech.edu.cn</p>
         </div>
